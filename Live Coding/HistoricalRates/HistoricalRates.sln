@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradingDayDal", "TradingDayDal\TradingDayDal.csproj", "{43244EA5-3428-4053-B3C2-3E477D120ADE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradingDalDayUnitTests", "TradingDalDayUnitTests\TradingDalDayUnitTests.csproj", "{0EAB645E-45DD-4B3D-88A5-2A0C1E878270}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43244EA5-3428-4053-B3C2-3E477D120ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43244EA5-3428-4053-B3C2-3E477D120ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43244EA5-3428-4053-B3C2-3E477D120ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43244EA5-3428-4053-B3C2-3E477D120ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EAB645E-45DD-4B3D-88A5-2A0C1E878270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EAB645E-45DD-4B3D-88A5-2A0C1E878270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EAB645E-45DD-4B3D-88A5-2A0C1E878270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EAB645E-45DD-4B3D-88A5-2A0C1E878270}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
