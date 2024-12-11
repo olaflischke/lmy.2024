@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EierfarmUi", "EierfarmUi\EierfarmUi.csproj", "{51B2D302-8B66-4690-93CF-1DD7AF5FFB15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EggfarmModel", "EggfarmModel\EggfarmModel.csproj", "{EA277E58-E1E4-4827-9E82-0EE6D1712523}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EierfarmMvvmUi", "EierfarmMvvmUi\EierfarmMvvmUi.csproj", "{3034CF6C-4D70-4B5B-BEA6-7C1920BDA7A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51B2D302-8B66-4690-93CF-1DD7AF5FFB15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B2D302-8B66-4690-93CF-1DD7AF5FFB15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B2D302-8B66-4690-93CF-1DD7AF5FFB15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B2D302-8B66-4690-93CF-1DD7AF5FFB15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA277E58-E1E4-4827-9E82-0EE6D1712523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA277E58-E1E4-4827-9E82-0EE6D1712523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA277E58-E1E4-4827-9E82-0EE6D1712523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA277E58-E1E4-4827-9E82-0EE6D1712523}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3034CF6C-4D70-4B5B-BEA6-7C1920BDA7A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3034CF6C-4D70-4B5B-BEA6-7C1920BDA7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3034CF6C-4D70-4B5B-BEA6-7C1920BDA7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3034CF6C-4D70-4B5B-BEA6-7C1920BDA7A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

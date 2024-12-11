@@ -1,0 +1,93 @@
+﻿<Window
+    x:Class="EierfarmMvvmUi.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:EierfarmMvvmUi"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="300"
+    Height="300"
+    mc:Ignorable="d"
+    >
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Color="Black" />
+                        <GradientStop Offset="1" Color="White" />
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Width" Value="80" />
+        </Style>
+    </Window.Resources>
+    <Canvas>
+        <ComboBox
+            x:Name="cbxAnimals"
+            Canvas.Left="62"
+            Canvas.Top="10"
+            Width="120"
+            DisplayMemberPath="Name"
+            ItemsSource="{Binding Animals}"
+            SelectedItem="{Binding SelectedAnimal}"
+            >
+
+        </ComboBox>
+        <Button
+            x:Name="btnDuck"
+            Canvas.Left="187"
+            Canvas.Top="36"
+            Command="{Binding NewDuckCommand}"
+            Content="Ente"
+            />
+        <Button
+            x:Name="btnChicken"
+            Canvas.Left="187"
+            Canvas.Top="11"
+            Command="{Binding NewChickenCommand}"
+            Content="Huhn"
+            />
+        <TextBox
+            Canvas.Left="60"
+            Canvas.Top="83"
+            Width="120"
+            Text="{Binding ElementName=cbxAnimals, Path=SelectedItem.Id}"
+            />
+        <TextBox
+            Canvas.Left="62"
+            Canvas.Top="60"
+            Width="120"
+            Text="{Binding ElementName=cbxAnimals, Path=SelectedItem.Name}"
+            />
+        <TextBox
+            Canvas.Left="60"
+            Canvas.Top="37"
+            Width="120"
+            Text="{Binding ElementName=cbxAnimals, Path=SelectedItem.Weight}"
+            />
+        <ListBox
+            Canvas.Left="60"
+            Canvas.Top="106"
+            Width="120"
+            Height="120"
+            ItemsSource="{Binding ElementName=cbxAnimals, Path=SelectedItem.Eggs}"
+            >
+        </ListBox>
+        <Button
+            x:Name="btnFuettern"
+            Canvas.Left="187"
+            Canvas.Top="81"
+            Command="{Binding FeedCommand}"
+            Content="Füttern"
+            />
+        <Button
+            x:Name="btnEiLegen"
+            Canvas.Left="187"
+            Canvas.Top="106"
+            Command="{Binding LayEggCommand}"
+            Content="Ei legen"
+            />
+    </Canvas>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window
+    x:Class="NumericUpDownDemo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:NumericUpDownDemo"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:nud="clr-namespace:NumericUpDownControl;assembly=NumericUpDownControl"
+    Title="MainWindow"
+    Width="290.811"
+    Height="143.514"
+    mc:Ignorable="d">
+    <Canvas>
+        <nud:NumericUpDown
+            Canvas.Left="10"
+            Canvas.Top="10"
+            Width="116"
+            Height="25"
+            Maximum="5"
+            Minimum="-5"
+            Value="2" />
+    </Canvas>
+</Window>

@@ -1,0 +1,14 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:model="clr-namespace:EggfarmModel.Model;assembly=EggfarmModel"
+    >
+
+    <DataTemplate x:Key="dtEi" DataType="{x:Type model:Egg}">
+        <TextBlock>
+            <Run Text="{Binding Weight, StringFormat=0.0g}" />
+            <Run Text="{Binding Color}" />
+        </TextBlock>
+    </DataTemplate>
+
+</ResourceDictionary>
